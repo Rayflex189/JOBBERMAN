@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/withdrawal.css' %}">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+
+          
+        <div class="row">
+            <div class="col">
+                <h3 class="title">billing adress</h3>
+
+                <div class="inputBox">
+                    <span>full name:</span>
+                    <input type="text" placeholder="john doe">
+                </div>
+
+                <div class="inputBox">
+                    <span>full name:</span>
+                    <input type="email" placeholder="example@gmail.com">
+                </div>
+
+                <div class="inputBox">
+                    <span>address:</span>
+                    <input type="text" placeholder="Housenumber - street - locality">
+                </div>
+
+               <div class="flex">
+                <div class="inputBox">
+                    <span>state:</span>
+                    <input type="text" placeholder="Choose country">
+                </div>
+
+                <div class="inputBox">
+                    <span>zip code:</span>
+                    <input type="text" placeholder="123 456">
+                </div>
+               </div>
+            </div>
+
+
+
+            <div class="col">
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>name on card:</span>
+                    <input type="text" placeholder="john doe">
+                </div>
+
+                <div class="inputBox">
+                    <span>cards accepted:</span>
+                    <div class="imgs">
+                        <img src="{% static 'images/master_card_e-commerce_business_20577.png' %}" alt="">
+                        <img src="{% static 'images/verve_payment_method_card_icon_142730.png' %}" alt="">
+                        <img src="images/1490135017-visa_82256.png" alt="">
+                        <img src="{% static 'images/credit_card_paypal_payment_method_icon_134923.png' %}" alt="">
+                        <img src="{% static 'images/bitcoin_icon-icons.com_60538.png' %}" alt="">
+                        <img src="{% static 'images/bank_78392.png' %}" alt="">
+                    </div>
+                </div>
+
+                <div class="inputBox">
+                    <span>exp month:</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+
+               <div class="flex">
+                <div class="inputBox">
+                    <span>exp year:</span>
+                    <input type="text" placeholder="Choose country">
+                </div>
+
+                <div class="inputBox">
+                    <span>CVV:</span>
+                    <input type="number" placeholder="1234">
+                </div>
+               </div>
+
+            </div>
+        </div>
+
+         <input type="submit" value="proceed to checkout" class="submit">
+
+        </form>
+    </div>
+</body>
+</html>
